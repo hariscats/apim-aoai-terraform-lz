@@ -29,3 +29,7 @@ output "ai_services_ai_project_id" {
 output "ai_services_ai_project_name" {
   value = azapi_resource.ai_project.name
 }
+
+output "environment_name" {
+  value = var.environment_name
+}

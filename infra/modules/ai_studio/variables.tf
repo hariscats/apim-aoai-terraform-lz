@@ -53,3 +53,19 @@ variable "subnet_id" {
   description = "The subnet ID to associate to the Azure Analysis Services server"
   type        = string
 }
+
+variable "environment_name" {
+  description = "The name of the environment"
+  type        = string
+}
+
+variable "model" {
+  description = "Details of the Cohere model being deployed"
+  type = object({
+    id                       = string
+    name                     = string
+    marketplace_offer_id     = string
+    marketplace_plan_id      = string
+    marketplace_publisher_id = string
+  })
+}
